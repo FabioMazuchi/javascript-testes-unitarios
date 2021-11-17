@@ -38,20 +38,26 @@ const calculator = (number1, number2) => {
     sum: 0,
     mult: 0,
     div: 0,
-    sub: 0
-  }
+    sub: 0,
+  };
   calc.sum = number1 + number2;
   calc.mult = number1 * number2;
   calc.div = Math.trunc(number1 / number2);
   calc.sub = number1 - number2;
-  
+
   return calc;
 };
 
 const arrayGenerator = (type, object) => {
-  if(type === 'keys') { return Object.keys(object)}
-  if(type === 'values') { return Object.values(object)}
-  if(type === 'entries') { return Object.entries(object)}
+  if (type === 'keys') {
+    return Object.keys(object);
+  }
+  if (type === 'values') {
+    return Object.values(object);
+  }
+  if (type === 'entries') {
+    return Object.entries(object);
+  }
 };
 
 module.exports = { calculator, arrayGenerator };

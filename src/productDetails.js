@@ -38,22 +38,5 @@ const productDetails = (firstProduct, secondProduct) => [
     },
   },
 ];
-// const prod = productDetails('Alcool gel', 'Máscara');
-// const p1 = prod[0].details.productId;
-// const p2 = prod[1].details.productId;
-// let string1 = "";
-// let string2 = "";
-
-// for (let i = 1; i <= 3; i++) {
-//   string1 += p1[p1.length - i];
-//   string2 += p2[p2.length - i];
-// }
-
-// const reverse = (string) => {
-//   return string.split('').reverse().join('');
-// }
-
-// console.log(reverse(string1));
-// console.log(string2);
 
 module.exports = productDetails;
